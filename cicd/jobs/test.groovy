@@ -40,7 +40,7 @@ def jobconfig = """
 
 def jobconfignode = new XmlParser().parseText(jobconfig)
 
-job('solution') {
+job('hello') {
     configure { node ->
         // node represents <project>
         jobconfignode.each { child ->
